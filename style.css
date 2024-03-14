@@ -7,6 +7,11 @@ header,footer,.container{
     text-align: center;
 }
 
+.calc {
+    border: 2px solid black;
+    display: inline-block;
+    padding: 12px;
+  }
 
 h1 {
     color: black;
