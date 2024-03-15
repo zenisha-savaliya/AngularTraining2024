@@ -1,19 +1,19 @@
 // TASK2A
 
-var input = [1, 2, 3, 4, 5, 6].map((x) => x * 2);
-console.log(input);
+const inputOne = [1, 2, 3, 4, 5, 6].map((x) => x * 2);
+console.log(inputOne);
 
 // TASK2B
 
-var input = [0, 23, 0, 0, 0, 4, 6, 0, 8, 10, 0, 0, 0, 12];
-let arr = [];
-let arr2 = [];
-for (let x in input) {
-  if (input[x] !== 0) {
-    arr.push(input[x]);
+const inputTwo = [0, 23, 0, 0, 0, 4, 6, 0, 8, 10, 0, 0, 0, 12];
+const nonZeroValues = [];
+const zeroValues = [];
+for (let index in inputTwo) {
+  if (inputTwo[index] !== 0) {
+    nonZeroValues.push(inputTwo[index]);
   } else {
-    arr2.push(input[x]);
+    zeroValues.push(inputTwo[index]);
   }
 }
-let res = arr.concat(arr2);
-console.log(res);
+const resultArray = nonZeroValues.concat(zeroValues);
+console.log(resultArray);

@@ -1,83 +1,91 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
-$text-color : white;
+$text-color: white;
 
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-body{
-    margin: 0;
-    padding: 0;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.header{
-    background-color: #b8b5b5;
-    text-align: center;
-    padding: 20px;
-    top: 0;
+.header {
+  background-color: #b8b5b5;
+  text-align: center;
+  padding: 20px;
+  top: 0;
 }
 
 .footer {
-    background-color: #b8b5b5;
-    text-align: center;
-    padding: 10px;
-    display: flex;
-    position: absolute;
-    width: 100%;
-    justify-content: center;
-    bottom: 0;
-
+  background-color: #b8b5b5;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  justify-content: center;
+  bottom: 0;
 }
 
-.container{
-    display: flex;
-    justify-content: center;
+.container {
+  display: flex;
+  justify-content: center;
 }
 
-.calculator{
-    border: 2px solid rgb(36, 33, 33);
-    border-radius: 3px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 20px;
-    padding: 20px;
-    background-color: black;
+.calculator {
+  border: 2px solid rgb(36, 33, 33);
+  border-radius: 3px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: black;
 }
 
 .inputBox {
-    width: 205px;
-    height: 55px;
-    margin: 13px;
-    font-size: 30px;
-  }
-
-button {
-    margin: 2px 3px;
-    padding: 10px;
-    width: 45px;
-    height: 45px;
-    text-align: center;
-    cursor: pointer;
-    border: 1px solid black;
-    border-radius: 20px;
-    font-size: 15px;
-    font-weight: bold;
-  }
-
-.button:hover{background-color: rgb(116, 113, 113); color: $text-color;}  
-
-.equal{
- background-color: rgba(255, 139, 7, 0.863);
- color: $text-color;
-} 
-
-.equal:hover{background-color: $text-color; color: black;}
-
-.operator{
-    color: $text-color;
-    background-color: rgb(116, 113, 113);
+  width: 205px;
+  height: 55px;
+  margin: 13px;
+  font-size: 30px;
 }
 
-.operator:hover{background-color: $text-color; color: black;}
+button {
+  margin: 2px 3px;
+  padding: 10px;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: rgb(116, 113, 113);
+  color: $text-color;
+}
+
+.equal {
+  background-color: rgba(255, 139, 7, 0.863);
+  color: $text-color;
+}
+
+.equal:hover {
+  background-color: $text-color;
+  color: black;
+}
+
+.operator {
+  color: $text-color;
+  background-color: rgb(116, 113, 113);
+}
+
+.operator:hover {
+  background-color: $text-color;
+  color: black;
+}
