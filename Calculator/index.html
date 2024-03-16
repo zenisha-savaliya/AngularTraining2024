@@ -9,7 +9,7 @@
   <body>
     <!-- header start -->
     <div class="header">
-      <h1>Hello! This is my Calculator</h1>
+      <h3>Calculator Made With HTML,CSS And JavaScript</h3>
     </div>
     <!-- header end -->
 
@@ -18,34 +18,56 @@
       <div class="calculator">
         <input type="text" class="inputBox" placeholder="0" />
         <div class="row">
-          <button class="button operator">AC</button>
-          <button class="button operator">DEL</button>
-          <button class="button operator">%</button>
-          <button class="button operator">/</button>
+          <button class="button operator" value="AC" onclick="clearInput()">
+            AC
+          </button>
+          <button
+            class="button operator"
+            value="DEL"
+            onclick="deleteLastCharacter()"
+          >
+            DEL
+          </button>
+          <button class="button operator" value="%" onclick="updateInput('%')">
+            %
+          </button>
+          <button class="button operator" value="/" onclick="updateInput('/')">
+            /
+          </button>
         </div>
         <div class="row">
-          <button class="button">7</button>
-          <button class="button">8</button>
-          <button class="button">9</button>
-          <button class="button operator">*</button>
+          <button class="button" value="7" onclick="updateInput('7')">7</button>
+          <button class="button" value="8" onclick="updateInput('8')">8</button>
+          <button class="button" value="9" onclick="updateInput('9')">9</button>
+          <button class="button operator" value="*" onclick="updateInput('*')">
+            *
+          </button>
         </div>
         <div class="row">
-          <button class="button">4</button>
-          <button class="button">5</button>
-          <button class="button">6</button>
-          <button class="button operator">-</button>
+          <button class="button" value="4" onclick="updateInput('4')">4</button>
+          <button class="button" value="5" onclick="updateInput('5')">5</button>
+          <button class="button" value="6" onclick="updateInput('6')">6</button>
+          <button class="button operator" value="-" onclick="updateInput('-')">
+            -
+          </button>
         </div>
         <div class="row">
-          <button class="button">1</button>
-          <button class="button">2</button>
-          <button class="button">3</button>
-          <button class="button operator">+</button>
+          <button class="button" value="1" onclick="updateInput('1')">1</button>
+          <button class="button" value="2" onclick="updateInput('2')">2</button>
+          <button class="button" value="3" onclick="updateInput('3')">3</button>
+          <button class="button operator" value="+" onclick="updateInput('+')">
+            +
+          </button>
         </div>
         <div class="row">
-          <button class="button">00</button>
-          <button class="button">0</button>
-          <button class="button">.</button>
-          <button class="button equal">=</button>
+          <button class="button" value="00" onclick="updateInput('00')">
+            00
+          </button>
+          <button class="button" value="0" onclick="updateInput('0')">0</button>
+          <button class="button" value="." onclick="updateInput('.')">.</button>
+          <button class="button equal" value="=" onclick="calculate()">
+            =
+          </button>
         </div>
       </div>
     </div>
@@ -53,7 +75,7 @@
 
     <!-- footer start -->
     <div class="footer">
-      <h4>Mini Calculator Application By Zenisha Savaliya</h4>
+      <h4>Made with <span class="heart">❤</span> in Bacancy</h4>
     </div>
     <!-- footer end -->
 

@@ -9,21 +9,26 @@ body {
 }
 
 .header {
-  background-color: #b8b5b5;
+  background-color: black;
+  color: white;
   text-align: center;
-  padding: 20px;
+  padding: 1px;
+  font-size: 18px;
   top: 0;
 }
 
 .footer {
-  background-color: #b8b5b5;
-  text-align: center;
-  padding: 10px;
+  background-color: black;
+  color: white;
   display: flex;
   position: absolute;
   width: 100%;
   justify-content: center;
   bottom: 0;
+}
+
+.footer .heart {
+  color: red;
 }
 
 .container {
@@ -47,6 +52,7 @@ body {
   height: 55px;
   margin: 13px;
   font-size: 30px;
+  text-align: right;
 }
 
 button {
@@ -85,4 +91,4 @@ button {
 .operator:hover {
   background-color: white;
   color: black;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
