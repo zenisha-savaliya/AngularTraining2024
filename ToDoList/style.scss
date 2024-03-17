@@ -1,0 +1,58 @@
+$text-color: white;
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background: linear-gradient(45deg, rgb(245, 156, 33), rgb(255, 191, 0));
+  border-radius: 10px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.userInput {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.inputBox {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-right: 3px;
+}
+
+.addTask {
+  padding: 10px 20px;
+  border: none;
+  background-color: rgb(255, 111, 0);
+  color: $text-color;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.addTask:hover {
+  background-color: rgb(255, 85, 0);
+}
+
+.taskList ul {
+  list-style-type: circle;
+  padding: 0;
+}
+
+.taskList li {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: $text-color;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 7px rgba(244, 226, 226, 0.5);
+}

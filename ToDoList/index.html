@@ -3,18 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <title>To Do List</title>
   </head>
   <body>
-    <!-- header start -->
-    <header class="header">To Do List</header>
-    <!-- header end -->
-
-    <div class="userInput">
-      <input type="text" class="inputBox" />
-      <button class="addTask" onclick="addTask()">Add Task</button>
+    <div class="container">
+      <div class="title">
+        <h2>To-Do List</h2>
+      </div>
+      <div class="userInput">
+        <input type="text" placeholder="add your task.." class="inputBox" />
+        <button class="addTask" onclick="addTask()">Add Task</button>
+      </div>
+      <div class="taskList">
+        <ul></ul>
+      </div>
     </div>
-    <div class="taskList"></div>
     <script src="script.js"></script>
   </body>
 </html>
