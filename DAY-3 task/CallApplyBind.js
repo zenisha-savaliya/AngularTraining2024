@@ -1,4 +1,4 @@
-const person1 = {
+const personOne = {
   firstName: "Zenisha",
   lastName: "Savaliya",
   fullName: function (prefix, suffix) {
@@ -13,17 +13,17 @@ const person1 = {
   },
 };
 
-const person2 = {
+const personTwo = {
   firstName: "Dhruv",
   lastName: "Savaliya",
 };
 
 // Using call
-person1.fullName.call(person2, "Mr", "Hello From call Method");
+personOne.fullName.call(personTwo, "Mr", "Hello From call Method");
 
 // Using apply
-person1.fullName.apply(person2, ["Mr"]);
+personOne.fullName.apply(personTwo, ["Mr"]);
 
 // Using bind
-const fullNameWithBind = person1.fullName.bind(person2);
+const fullNameWithBind = personOne.fullName.bind(personTwo);
 fullNameWithBind("", "Hello From bind Method");
