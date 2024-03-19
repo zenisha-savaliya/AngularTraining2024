@@ -7,7 +7,7 @@ function greet() {
 greet();
 console.log(b);
 
-//output of the above code will be:
+//output:
 // hello and then error : Uncaught ReferenceError: b is not defined
 //here in the greet function body contains b as local variable and as we declared with var so code will be interpreted as
 // var b;

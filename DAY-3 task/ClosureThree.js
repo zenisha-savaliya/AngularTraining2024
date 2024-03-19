@@ -12,6 +12,7 @@ function outest() {
 let a = 100;
 var close = outest()("Hi Closures");
 close();
+//output:
 //10 'Hi Closures' 12
 //when we are calling outest()("Hi Closures") value of c is 12 and b is "Hi Closures" and outest function returns outer
 //function which contains inner function who logs value of a,b,c and can access value of a,b,c which is 10, "Hi Closures" and 12 and close variable holds this

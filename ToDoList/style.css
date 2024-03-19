@@ -1,14 +1,24 @@
+body {
+  background: linear-gradient(45deg, rgb(245, 156, 33), rgb(255, 191, 0));
+}
+
 .container {
   max-width: 400px;
-  margin: 0 auto;
+  margin: 100px auto;
   padding: 20px;
-  background: linear-gradient(45deg, rgb(245, 156, 33), rgb(255, 191, 0));
+  border: 2px solid rgb(221, 218, 218);
   border-radius: 10px;
 }
 
 .title {
   text-align: center;
   margin-bottom: 20px;
+  color: white;
+}
+
+.title img {
+  width: 25px;
+  height: 25px;
 }
 
 .userInput {
@@ -40,7 +50,6 @@
 }
 
 .taskList ul {
-  list-style-type: circle;
   padding: 0;
 }
 
@@ -53,4 +62,15 @@
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 2px 7px rgba(244, 226, 226, 0.5);
+}
+
+.removeButton {
+  font-weight: bold;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: orange;
+  padding: 5px 10px;
+  border: 2px solid black;
+  border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */

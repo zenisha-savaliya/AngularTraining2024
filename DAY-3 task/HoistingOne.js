@@ -9,7 +9,8 @@ var myFunction = function func() {
   return "hey there!";
 };
 console.log(myFunction());
-//Uncaught TypeError: myFunction is not a function
+
+//output: Uncaught TypeError: myFunction is not a function
 //here if we call func() then in console we will get "hey there!" but we are calling myFunction()
 //which will give TypeError because yet it is not of type function and we are calling it as a function
 //before calling it as a function if we try to log it's value then it is "undefined" as it is var type variable and after line no 10

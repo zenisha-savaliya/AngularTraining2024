@@ -7,19 +7,15 @@ function addTask() {
   if (taskText !== "") {
     let listItem = document.createElement("li");
     listItem.textContent = taskText;
-    listItem.style.listStyleType = "circle";
+
+    // adding remove button with javascript
 
     let removeButton = document.createElement("button");
     removeButton.textContent = "X";
-    removeButton.style.fontWeight = "bold";
-    removeButton.style.fontSize = "16px";
-    removeButton.style.cursor = "pointer";
-    removeButton.style.backgroundColor = "orange";
-    removeButton.style.padding = "5px 10px";
-    removeButton.style.border = "2px solid black";
-    removeButton.style.borderRadius = "50%";
+    removeButton.classList.add("removeButton");
     removeButton.onclick = function () {
       listItem.remove();
+      alert("item removed");
     };
     listItem.appendChild(removeButton);
 

@@ -1,8 +1,8 @@
 const person1 = {
-  firstname: "zenisha",
-  lastname: "savaliya",
-  fullname: function (prefix, suffix) {
-    let fullName = this.firstname + " " + this.lastname;
+  firstName: "Zenisha",
+  lastName: "Savaliya",
+  fullName: function (prefix, suffix) {
+    let fullName = this.firstName + " " + this.lastName;
     if (prefix) {
       fullName = prefix + " " + fullName;
     }
@@ -14,16 +14,16 @@ const person1 = {
 };
 
 const person2 = {
-  firstname: "dhruv",
-  lastname: "savaliya",
+  firstName: "Dhruv",
+  lastName: "Savaliya",
 };
 
 // Using call
-person1.fullname.call(person2, "Mr", "Hello From call Method");
+person1.fullName.call(person2, "Mr", "Hello From call Method");
 
 // Using apply
-person1.fullname.apply(person2, ["Mr"]);
+person1.fullName.apply(person2, ["Mr"]);
 
 // Using bind
-const bindFullname = person1.fullname.bind(person2);
-bindFullname("", "Hello From bind Method");
+const fullNameWithBind = person1.fullName.bind(person2);
+fullNameWithBind("", "Hello From bind Method");

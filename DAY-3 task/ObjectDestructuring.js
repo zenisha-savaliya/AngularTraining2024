@@ -13,6 +13,7 @@
 // console.log([y, z]);
 // console.log(z);
 
+//output:
 // one
 // ['two', 'three']
 // three
@@ -23,6 +24,8 @@
 // let [x = 5, y = 7] = arrValue;
 // console.log(x);
 // console.log(y);
+
+//output:
 //10
 //7
 
@@ -31,6 +34,7 @@
 // const [a, b, ...[length]] = [1, 2, 3];
 // console.log(a, b, length);
 
+//output:
 // 1 2 3
 
 //Q5
@@ -38,4 +42,5 @@
 const [a, b, ...{ length }] = [1, 2, 3];
 console.log(a, b, length);
 
+//output:
 // 1 2 1

@@ -9,6 +9,8 @@ const counter = setCount();
 counter();
 counter();
 counter();
+
+//output:
 //0
 //2
 //2
