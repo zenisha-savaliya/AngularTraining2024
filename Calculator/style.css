@@ -55,7 +55,7 @@ body {
   text-align: right;
 }
 
-button {
+.button {
   margin: 2px 3px;
   padding: 10px;
   width: 45px;
@@ -73,19 +73,9 @@ button {
   color: white;
 }
 
-.equal {
+.operator {
   background-color: rgba(255, 139, 7, 0.863);
   color: white;
-}
-
-.equal:hover {
-  background-color: white;
-  color: black;
-}
-
-.operator {
-  color: white;
-  background-color: rgb(116, 113, 113);
 }
 
 .operator:hover {
