@@ -11,7 +11,7 @@ function addTask() {
     // adding remove button with javascript
 
     let removeButton = document.createElement("button");
-    removeButton.textContent = "X";
+    removeButton.textContent = "✖";
     removeButton.classList.add("removeButton");
     removeButton.onclick = function () {
       listItem.remove();

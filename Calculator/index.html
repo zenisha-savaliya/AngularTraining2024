@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"
+      integrity="sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <title>Calculator</title>
   </head>
   <body>
@@ -16,7 +22,7 @@
     <!-- container start -->
     <div class="container">
       <div class="calculator">
-        <input type="text" class="inputBox" placeholder="0" />
+        <input type="text" class="inputBox" placeholder="0" readonly />
         <div class="row">
           <button class="button operator" value="AC" onclick="clearInput()">
             AC

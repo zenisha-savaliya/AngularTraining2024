@@ -6,12 +6,19 @@ const operators = ["+", "-", "*", "/", "%"];
 
 function updateInput(value) {
   if (isCalculationCompleted) {
-    inputBox.value = "";
+    clearInput();
     isCalculationCompleted = false;
   }
   const lastChar = inputBox.value.slice(-1);
-
   const isOperator = operators.includes(lastChar);
+  const isConsecutiveDot = value === "." && lastChar === ".";
+
+  if (inputBox.value === "" && operators.includes(value)) {
+    return;
+  }
+  if (isConsecutiveDot) {
+    return;
+  }
 
   if (isOperator && operators.includes(value)) {
     inputBox.value = inputBox.value.slice(0, -1) + value;
@@ -36,16 +43,29 @@ function deleteLastCharacter() {
 
 function calculate() {
   try {
-    let result = eval(inputBox.value);
-    if (isNaN(result)) {
-      inputBox.value = "";
-      throw new Error("Invalid expression");
+    let expression = inputBox.value;
+
+    if (expression.includes("%")) {
+      let parts = expression.split("%");
+      if (!isNaN(parts[0])) {
+        let percentage = parseFloat(parts[0]) / 100;
+        expression = percentage.toString() + "*" + parts[1];
+      } else {
+        throw new Error("Invalid expression: Invalid percentage format.");
+      }
     }
-    inputBox.value = result;
+
+    let result = math.evaluate(expression);
+
+    if (!isFinite(result)) {
+      throw new Error("Invalid expression: Result is not a valid number.");
+    }
+    inputBox.value = parseFloat(result.toFixed(7));
     isCalculationCompleted = true;
   } catch (error) {
-    alert(error.message);
-    inputBox.value = "";
+    console.log("in catch block");
+    inputBox.value = "Error ";
+    clearInput();
   }
 }
 
