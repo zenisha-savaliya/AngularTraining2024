@@ -9,7 +9,7 @@ interface PersonInfo {
     lastName: string;
     age: number;
     address: Address;
-    contacts?: string[]; 
+    contacts: number[]|number|null; 
     getFullName(): string;
     getFullAddress(): string;
 }
@@ -23,7 +23,7 @@ const personInfoObj: PersonInfo = {
         city: "ahmedabad",
         pincode: "385001"
     },
-    contacts: ["8695475869", "zenisha.savaliya@bacancy.com"],
+    contacts:[1234567898,9586842849],
     getFullName(): string {
         return `${this.firstName} ${this.lastName}`;
     },

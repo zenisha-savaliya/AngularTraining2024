@@ -7,7 +7,7 @@ var personInfoObj = {
         city: "ahmedabad",
         pincode: "385001"
     },
-    contacts: ["8695475869", "zenisha.savaliya@bacancy.com"],
+    contacts: [1234567898, 9586842849],
     getFullName: function () {
         return "".concat(this.firstName, " ").concat(this.lastName);
     },
