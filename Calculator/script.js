@@ -1,14 +1,10 @@
-let inputBox = document.getElementsByClassName("inputBox")[0];
-let isCalculationCompleted = false;
+let inputBox = document.querySelector(".inputBox");
+console.log(inputBox);
 const operators = ["+", "-", "*", "/", "%"];
 
 //function to update input value
 
 function updateInput(value) {
-  if (isCalculationCompleted) {
-    clearInput();
-    isCalculationCompleted = false;
-  }
   const lastChar = inputBox.value.slice(-1);
   const isOperator = operators.includes(lastChar);
   const isConsecutiveDot = value === "." && lastChar === ".";
@@ -44,28 +40,10 @@ function deleteLastCharacter() {
 function calculate() {
   try {
     let expression = inputBox.value;
-
-    if (expression.includes("%")) {
-      let parts = expression.split("%");
-      if (!isNaN(parts[0])) {
-        let percentage = parseFloat(parts[0]) / 100;
-        expression = percentage.toString() + "*" + parts[1];
-      } else {
-        throw new Error("Invalid expression: Invalid percentage format.");
-      }
-    }
-
     let result = math.evaluate(expression);
-
-    if (!isFinite(result)) {
-      throw new Error("Invalid expression: Result is not a valid number.");
-    }
     inputBox.value = parseFloat(result.toFixed(7));
-    isCalculationCompleted = true;
   } catch (error) {
-    console.log("in catch block");
     inputBox.value = "Error ";
-    clearInput();
   }
 }
 
@@ -74,5 +52,4 @@ function calculate() {
 function calculateSquare() {
   let value = parseInt(inputBox.value);
   inputBox.value = value * value;
-  isCalculationCompleted = true;
 }
